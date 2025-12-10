@@ -122,3 +122,9 @@ footer {
 [data-aos].aos-animate {
     opacity: 1;
 }
+
+/* TEST VISUAL CLARO */
+header {
+    background-color: yellow !important;
+}
+
