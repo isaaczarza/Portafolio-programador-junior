@@ -74,6 +74,12 @@
     </div>
   </section>
 
+  <!-- CONTADOR -->
+<section class="container text-center py-5">
+  <h2 id="contador">0</h2>
+  <button id="btnContar" class="btn btn-primary mt-3">Haz clic aquí</button>
+</section>
+
   <!-- PROYECTOS -->
   <section id="proyectos" class="py-5">
     <div class="container">
@@ -139,6 +145,15 @@
   <!-- Saludo en la consola -->
 <script>
   console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
+</script>
+
+  <script>
+let numero = 0;
+
+document.getElementById("btnContar").addEventListener("click", function() {
+    numero++;
+    document.getElementById("contador").innerText = numero;
+});
 </script>
 
 
