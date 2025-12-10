@@ -9,13 +9,16 @@
 
   <title>Portafolio – Isaac Zarza</title>
 
-  <!-- TU CSS -->
+  <!-- CSS PERSONALIZADO -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-  <!-- NAVBAR BOOTSTRAP -->
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
@@ -26,18 +29,10 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#habilidades">Habilidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
@@ -46,7 +41,7 @@
   <!-- HERO -->
   <header id="inicio" class="text-center py-5">
     <div class="container">
-      <h1 class="fw-bold">¡Hola, soy Isaac Zarza!</h1>
+      <h1 class="fw-bold" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
       <p class="lead">Desarrollador web en formación — HTML, CSS, JavaScript y Python.</p>
       <a href="#proyectos" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
     </div>
@@ -55,40 +50,33 @@
   <!-- HABILIDADES -->
   <section id="habilidades" class="py-5 bg-light">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4">Habilidades</h2>
+      <h2 class="fw-bold text-center mb-4" data-aos="zoom-in">Habilidades</h2>
 
       <div class="row g-4">
-        <div class="col-6 col-md-3 text-center">
-          <div class="p-3 shadow-sm rounded bg-white">HTML</div>
-        </div>
-        <div class="col-6 col-md-3 text-center">
-          <div class="p-3 shadow-sm rounded bg-white">CSS</div>
-        </div>
-        <div class="col-6 col-md-3 text-center">
-          <div class="p-3 shadow-sm rounded bg-white">JavaScript</div>
-        </div>
-        <div class="col-6 col-md-3 text-center">
-          <div class="p-3 shadow-sm rounded bg-white">Python</div>
-        </div>
+        <div class="col-6 col-md-3 text-center"><div class="p-3 shadow-sm rounded bg-white">HTML</div></div>
+        <div class="col-6 col-md-3 text-center"><div class="p-3 shadow-sm rounded bg-white">CSS</div></div>
+        <div class="col-6 col-md-3 text-center"><div class="p-3 shadow-sm rounded bg-white">JavaScript</div></div>
+        <div class="col-6 col-md-3 text-center"><div class="p-3 shadow-sm rounded bg-white">Python</div></div>
       </div>
     </div>
   </section>
 
   <!-- CONTADOR -->
-<section class="container text-center py-5">
-  <h2 id="contador">0</h2>
-  <button id="btnContar" class="btn btn-primary mt-3">Haz clic aquí</button>
-</section>
+  <section class="container text-center py-5">
+    <h2 id="contador">0</h2>
+    <button id="btnContar" class="btn btn-primary mt-3">Haz clic aquí</button>
+  </section>
 
   <!-- PROYECTOS -->
   <section id="proyectos" class="py-5">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4">Proyectos</h2>
+      <h2 class="fw-bold text-center mb-4" data-aos="fade-right">Proyectos</h2>
 
       <div class="row g-4">
-        <div class="col-md-4">
+        
+        <div class="col-md-4" data-aos="flip-up">
           <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary"></div>
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
               <h5 class="card-title">Proyecto 1</h5>
               <p class="card-text">Descripción breve del proyecto.</p>
@@ -97,9 +85,9 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-up">
           <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary"></div>
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
               <h5 class="card-title">Proyecto 2</h5>
               <p class="card-text">Descripción breve del proyecto.</p>
@@ -108,9 +96,9 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-up">
           <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary"></div>
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
               <h5 class="card-title">Proyecto 3</h5>
               <p class="card-text">Descripción breve del proyecto.</p>
@@ -126,7 +114,7 @@
   <!-- CONTACTO -->
   <section id="contacto" class="py-5 bg-light">
     <div class="container">
-      <h2 class="fw-bold text-center mb-4">Contacto</h2>
+      <h2 class="fw-bold text-center mb-4" data-aos="fade-left">Contacto</h2>
 
       <form class="mx-auto" style="max-width: 600px;">
         <input class="form-control mb-3" type="text" placeholder="Nombre" required>
@@ -143,22 +131,27 @@
   </footer>
 
   <!-- Saludo en la consola -->
-<script>
-  console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
-</script>
-
   <script>
-let numero = 0;
+    console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
+  </script>
 
-document.getElementById("btnContar").addEventListener("click", function() {
-    numero++;
-    document.getElementById("contador").innerText = numero;
-});
-</script>
-
+  <!-- CONTADOR JS -->
+  <script>
+    let numero = 0;
+    document.getElementById("btnContar").addEventListener("click", function() {
+        numero++;
+        document.getElementById("contador").innerText = numero;
+    });
+  </script>
 
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
