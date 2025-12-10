@@ -108,3 +108,16 @@ form button {
 footer {
     font-size: 0.9rem;
 }
+
+/* ------------------------------ */
+/* AOS FIX — Ajuste para animaciones */
+/* ------------------------------ */
+
+[data-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
