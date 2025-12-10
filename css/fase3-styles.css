@@ -1,17 +1,27 @@
 /* ------------------------------ */
+/* PALETA DE COLORES */
+/* ------------------------------ */
+
+:root {
+    --verde-oscuro: #0f3d3e;
+    --verde-claro: #74c69d;
+    --gris-fondo: #f4f4f4;
+    --gris-texto: #555;
+    --blanco: #ffffff;
+}
+
+/* ------------------------------ */
 /* ESTILOS GENERALES */
 /* ------------------------------ */
-/* Prueba */
 
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: var(--gris-fondo);
+    color: var(--gris-texto);
     margin: 0;
     padding: 0;
 }
 
-/* Suaviza el scroll entre secciones */
 html {
     scroll-behavior: smooth;
 }
@@ -20,19 +30,25 @@ html {
 /* NAVBAR */
 /* ------------------------------ */
 
+.navbar {
+    background-color: var(--verde-oscuro) !important;
+}
+
 .navbar-brand {
+    color: var(--blanco) !important;
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .nav-link {
+    color: var(--blanco) !important;
     font-size: 1rem;
     margin-left: 10px;
     transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: #0d6efd;
+    color: var(--verde-claro) !important;
 }
 
 /* ------------------------------ */
@@ -40,25 +56,34 @@ html {
 /* ------------------------------ */
 
 header {
-    background: #f8f9fa;
-    padding: 80px 20px;
+    background: var(--verde-oscuro);
+    padding: 100px 20px;
+    text-align: center;
+    color: var(--blanco);
 }
 
 header h1 {
-    font-size: 2.3rem;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 header p {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.3rem;
+    color: var(--verde-claro);
 }
 
 /* ------------------------------ */
 /* HABILIDADES */
 /* ------------------------------ */
 
+#habilidades h2 {
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
 #habilidades .shadow-sm {
     transition: 0.3s ease;
+    border-radius: 12px;
 }
 
 #habilidades .shadow-sm:hover {
@@ -72,15 +97,15 @@ header p {
 
 .placeholder-img {
     width: 100%;
-    height: 180px;
-    border-radius: 6px 6px 0 0;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--verde-claro);
 }
 
-/* Hover bonito para cards */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .card:hover {
@@ -88,18 +113,37 @@ header p {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
+.card-title {
+    color: var(--verde-oscuro);
+    font-weight: 700;
+}
+
 /* ------------------------------ */
 /* CONTACTO */
 /* ------------------------------ */
 
+#contacto h2 {
+    color: var(--verde-oscuro);
+}
+
 form .form-control {
     border-radius: 10px;
     padding: 12px;
+    border: 2px solid var(--verde-claro);
 }
 
 form button {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
     border-radius: 10px;
     font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
 }
 
 /* ------------------------------ */
@@ -107,11 +151,15 @@ form button {
 /* ------------------------------ */
 
 footer {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
     font-size: 0.9rem;
 }
 
 /* ------------------------------ */
-/* AOS FIX — Ajuste para animaciones */
+/* AOS FIX */
 /* ------------------------------ */
 
 [data-aos] {
@@ -122,9 +170,3 @@ footer {
 [data-aos].aos-animate {
     opacity: 1;
 }
-
-/* TEST VISUAL CLARO */
-header {
-    background-color: yellow !important;
-}
-
