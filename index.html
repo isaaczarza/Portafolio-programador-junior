@@ -19,7 +19,7 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" data-aos="fade-down">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
 
@@ -41,42 +41,32 @@
   <!-- HERO -->
   <header id="inicio" class="text-center py-5">
     <div class="container">
-      <h1 class="fw-bold" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">
-        Desarrollador web en formación — HTML, CSS, JavaScript y Python.
-      </p>
-      <a href="#proyectos" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in">Ver mis proyectos</a>
+      <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">¡Hola, soy Isaac Zarza!</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">Desarrollador web en formación — HTML, CSS, JavaScript y Python.</p>
+      <a href="#proyectos" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="300">Ver mis proyectos</a>
     </div>
   </header>
 
   <!-- HABILIDADES -->
   <section id="habilidades" class="py-5 bg-light">
     <div class="container">
+
       <h2 class="fw-bold text-center mb-4" data-aos="zoom-in">Habilidades</h2>
 
       <div class="row g-4">
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
-          <div class="p-3 shadow-sm rounded bg-white">HTML</div>
-        </div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
-          <div class="p-3 shadow-sm rounded bg-white">CSS</div>
-        </div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
-          <div class="p-3 shadow-sm rounded bg-white">JavaScript</div>
-        </div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
-          <div class="p-3 shadow-sm rounded bg-white">Python</div>
-        </div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left"><div class="p-3 shadow-sm rounded bg-white">HTML</div></div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="100"><div class="p-3 shadow-sm rounded bg-white">CSS</div></div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="200"><div class="p-3 shadow-sm rounded bg-white">JavaScript</div></div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="300"><div class="p-3 shadow-sm rounded bg-white">Python</div></div>
       </div>
+
     </div>
   </section>
 
   <!-- CONTADOR -->
   <section class="container text-center py-5">
     <h2 id="contador" data-aos="fade-up">0</h2>
-    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up">
-      Haz clic aquí
-    </button>
+    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">Haz clic aquí</button>
   </section>
 
   <!-- PROYECTOS -->
@@ -86,7 +76,7 @@
 
       <div class="row g-4">
 
-        <div class="col-md-4" data-aos="flip-up">
+        <div class="col-md-4" data-aos="zoom-in">
           <div class="card shadow-sm">
             <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
@@ -97,7 +87,7 @@
           </div>
         </div>
 
-        <div class="col-md-4" data-aos="flip-up">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
           <div class="card shadow-sm">
             <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
@@ -108,7 +98,7 @@
           </div>
         </div>
 
-        <div class="col-md-4" data-aos="flip-up">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
           <div class="card shadow-sm">
             <div class="placeholder-img bg-secondary" style="height:150px;"></div>
             <div class="card-body">
@@ -128,20 +118,20 @@
     <div class="container">
       <h2 class="fw-bold text-center mb-4" data-aos="fade-left">Contacto</h2>
 
-      <form class="mx-auto" style="max-width: 600px;">
+      <form class="mx-auto" style="max-width: 600px;" data-aos="zoom-in">
         <input class="form-control mb-3" type="text" placeholder="Nombre" required>
         <input class="form-control mb-3" type="email" placeholder="Correo" required>
         <textarea class="form-control mb-3" rows="5" placeholder="Mensaje" required></textarea>
         <button class="btn btn-primary w-100 py-2" type="submit">Enviar</button>
       </form>
+
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="text-center py-3 mt-4 bg-dark text-white">
+  <footer class="text-center py-3 mt-4 bg-dark text-white" data-aos="fade-up">
     © 2025 Isaac Zarza — Portafolio de Programador
   </footer>
-
 
   <!-- SALUDO EN CONSOLA -->
   <script>
@@ -151,10 +141,9 @@
   <!-- CONTADOR -->
   <script>
     let numero = 0;
-
-    document.getElementById("btnContar").addEventListener("click", function () {
-      numero++;
-      document.getElementById("contador").innerText = numero;
+    document.getElementById("btnContar").addEventListener("click", function() {
+        numero++;
+        document.getElementById("contador").innerText = numero;
     });
   </script>
 
@@ -163,9 +152,7 @@
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
