@@ -12,12 +12,11 @@
   <!-- CSS PERSONALIZADO -->
   <link rel="stylesheet" href="css/fase3-styles.css?v=100000">
 
-  <!-- AOS CSS (versión estable) -->
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body>
-
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
@@ -43,7 +42,9 @@
   <header id="inicio" class="text-center py-5">
     <div class="container">
       <h1 class="fw-bold" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
-      <p class="lead">Desarrollador web en formación — HTML, CSS, JavaScript y Python.</p>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        Desarrollador web en formación — HTML, CSS, JavaScript y Python.
+      </p>
       <a href="#proyectos" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in">Ver mis proyectos</a>
     </div>
   </header>
@@ -54,10 +55,18 @@
       <h2 class="fw-bold text-center mb-4" data-aos="zoom-in">Habilidades</h2>
 
       <div class="row g-4">
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left"><div class="p-3 shadow-sm rounded bg-white">HTML</div></div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left"><div class="p-3 shadow-sm rounded bg-white">CSS</div></div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left"><div class="p-3 shadow-sm rounded bg-white">JavaScript</div></div>
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left"><div class="p-3 shadow-sm rounded bg-white">Python</div></div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
+          <div class="p-3 shadow-sm rounded bg-white">HTML</div>
+        </div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
+          <div class="p-3 shadow-sm rounded bg-white">CSS</div>
+        </div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
+          <div class="p-3 shadow-sm rounded bg-white">JavaScript</div>
+        </div>
+        <div class="col-6 col-md-3 text-center" data-aos="flip-left">
+          <div class="p-3 shadow-sm rounded bg-white">Python</div>
+        </div>
       </div>
     </div>
   </section>
@@ -65,7 +74,9 @@
   <!-- CONTADOR -->
   <section class="container text-center py-5">
     <h2 id="contador" data-aos="fade-up">0</h2>
-    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up">Haz clic aquí</button>
+    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up">
+      Haz clic aquí
+    </button>
   </section>
 
   <!-- PROYECTOS -->
@@ -131,7 +142,8 @@
     © 2025 Isaac Zarza — Portafolio de Programador
   </footer>
 
-  <!-- Saludo en consola -->
+
+  <!-- SALUDO EN CONSOLA -->
   <script>
     console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
   </script>
@@ -139,18 +151,21 @@
   <!-- CONTADOR -->
   <script>
     let numero = 0;
-    document.getElementById("btnContar").addEventListener("click", function() {
-        numero++;
-        document.getElementById("contador").innerText = numero;
+
+    document.getElementById("btnContar").addEventListener("click", function () {
+      numero++;
+      document.getElementById("contador").innerText = numero;
     });
   </script>
 
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- AOS JS CORRECTO -->
+  <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
