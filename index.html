@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,9 +15,10 @@
 
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <!-- DEVICON ICONS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
+  <!-- DEVICON ICONS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -50,114 +52,128 @@
     </div>
   </header>
 
-  <!-- HABILIDADES -->
-<section id="habilidades" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4" data-aos="fade-up">Habilidades</h2>
-    <div class="row g-4 mt-4">
+  <!-- HABILIDADES (la versión BONITA de hace 20 min) -->
+  <section id="habilidades" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Habilidades</h2>
+      <div class="row g-4 mt-4">
 
-      <!-- HTML -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in">
-        <div class="habilidad-card">
-          <img src="img/html.png" alt="HTML" class="habilidad-icono">
-          <h4>HTML</h4>
+        <!-- HTML -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in">
+          <div class="habilidad-card">
+            <img src="img/html.png" alt="HTML" class="habilidad-icono">
+            <h4>HTML</h4>
+          </div>
         </div>
-      </div>
 
-      <!-- CSS -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-        <div class="habilidad-card">
-          <img src="img/css.png" alt="CSS" class="habilidad-icono">
-          <h4>CSS</h4>
+        <!-- CSS -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="habilidad-card">
+            <img src="img/css.png" alt="CSS" class="habilidad-icono">
+            <h4>CSS</h4>
+          </div>
         </div>
-      </div>
 
-      <!-- JavaScript -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
-        <div class="habilidad-card">
-          <img src="img/js.png" alt="JavaScript" class="habilidad-icono">
-          <h4>JavaScript</h4>
+        <!-- JavaScript -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+          <div class="habilidad-card">
+            <img src="img/js.png" alt="JavaScript" class="habilidad-icono">
+            <h4>JavaScript</h4>
+          </div>
         </div>
-      </div>
 
-      <!-- Python -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
-        <div class="habilidad-card">
-          <img src="img/python.png" alt="Python" class="habilidad-icono">
-          <h4>Python</h4>
+        <!-- Python -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <div class="habilidad-card">
+            <img src="img/python.png" alt="Python" class="habilidad-icono">
+            <h4>Python</h4>
+          </div>
         </div>
-      </div>
 
-      <!-- SQL -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
-        <div class="habilidad-card">
-          <img src="img/sql.png" alt="SQL" class="habilidad-icono">
-          <h4>SQL</h4>
+        <!-- SQL -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+          <div class="habilidad-card">
+            <img src="img/sql.png" alt="SQL" class="habilidad-icono">
+            <h4>SQL</h4>
+          </div>
         </div>
-      </div>
 
-      <!-- Git -->
-      <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
-        <div class="habilidad-card">
-          <img src="img/git.png" alt="Git" class="habilidad-icono">
-          <h4>Git</h4>
+        <!-- Git -->
+        <div class="col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+          <div class="habilidad-card">
+            <img src="img/git.png" alt="Git" class="habilidad-icono">
+            <h4>Git</h4>
+          </div>
         </div>
+
       </div>
+    </div>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="container text-center py-5">
+    <h2 id="contador" data-aos="fade-up">0</h2>
+    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">Haz clic aquí</button>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4" data-aos="fade-right">Proyectos</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card shadow-sm">
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
+              <a href="#" class="btn btn-outline-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card shadow-sm">
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
+              <a href="#" class="btn btn-outline-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card shadow-sm">
+            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Descripción breve del proyecto.</p>
+              <a href="#" class="btn btn-outline-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4" data-aos="fade-left">Contacto</h2>
+
+      <form class="mx-auto" style="max-width: 600px;" data-aos="zoom-in">
+        <input class="form-control mb-3" type="text" placeholder="Nombre" required>
+        <input class="form-control mb-3" type="email" placeholder="Correo" required>
+        <textarea class="form-control mb-3" rows="5" placeholder="Mensaje" required></textarea>
+        <button class="btn btn-primary w-100 py-2" type="submit">Enviar</button>
+      </form>
 
     </div>
-  </div>
-</section>
-
-<!-- CONTADOR -->
-<section class="container text-center py-5">
-  <h2 id="contador" data-aos="fade-up">0</h2>
-  <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">Haz clic aquí</button>
-</section>
-
-<!-- PROYECTOS -->
-<section id="proyectos" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="fade-right">Proyectos</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card shadow-sm">
-          <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 1</h5>
-            <p class="card-text">Descripción breve del proyecto.</p>
-            <a href="#" class="btn btn-outline-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-        <div class="card shadow-sm">
-          <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 2</h5>
-            <p class="card-text">Descripción breve del proyecto.</p>
-            <a href="#" class="btn btn-outline-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="card shadow-sm">
-          <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-          <div class="card-body">
-            <h5 class="card-title">Proyecto 3</h5>
-            <p class="card-text">Descripción breve del proyecto.</p>
-            <a href="#" class="btn btn-outline-primary">Ver más</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- FOOTER -->
   <footer class="text-center py-3 mt-4 bg-dark text-white" data-aos="fade-up">
@@ -172,9 +188,9 @@
   <!-- CONTADOR -->
   <script>
     let numero = 0;
-    document.getElementById("btnContar").addEventListener("click", function() {
-        numero++;
-        document.getElementById("contador").innerText = numero;
+    document.getElementById("btnContar").addEventListener("click", function () {
+      numero++;
+      document.getElementById("contador").innerText = numero;
     });
   </script>
 
@@ -184,14 +200,14 @@
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  AOS.init({
-    once: false,        
-    duration: 800,      
-    easing: "ease-out", 
-    mirror: true        
-  });
-</script>
-
+    AOS.init({
+      once: false,
+      duration: 800,
+      easing: "ease-out",
+      mirror: true
+    });
+  </script>
 
 </body>
+
 </html>
