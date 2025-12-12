@@ -73,7 +73,7 @@ header p {
 }
 
 /* ------------------------------ */
-/* HABILIDADES */
+/* HABILIDADES — TARJETAS MODERNAS */
 /* ------------------------------ */
 
 #habilidades h2 {
@@ -81,14 +81,39 @@ header p {
     font-weight: 700;
 }
 
-#habilidades .shadow-sm {
-    transition: 0.3s ease;
-    border-radius: 12px;
+/* Tarjeta moderna para cada habilidad */
+.habilidad-card {
+    background: var(--blanco);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#habilidades .shadow-sm:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.habilidad-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* Iconos animados */
+.habilidad-icono {
+    width: 60px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.habilidad-icono:hover {
+    transform: scale(1.18);
+    filter: brightness(1.25);
+}
+
+.habilidad-card h4 {
+    color: var(--verde-oscuro);
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 /* ------------------------------ */
@@ -170,19 +195,3 @@ footer {
 [data-aos].aos-animate {
     opacity: 1;
 }
-
-/* ------------------------------ */
-/* ANIMACIÓN DE ICONOS HABILIDADES */
-/* ------------------------------ */
-
-.habilidad-icono {
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.habilidad-icono:hover {
-    transform: scale(1.18);
-    filter: brightness(1.25);
-}
-
-
-
