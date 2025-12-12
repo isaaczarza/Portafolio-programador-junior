@@ -170,3 +170,19 @@ footer {
 [data-aos].aos-animate {
     opacity: 1;
 }
+
+/* ------------------------------ */
+/* ANIMACIÓN DE ICONOS HABILIDADES */
+/* ------------------------------ */
+
+.habilidad-icono {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.habilidad-icono:hover {
+    transform: scale(1.18);
+    filter: brightness(1.25);
+}
+
+
+
