@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <title>Portafolio – Isaac Zarza</title>
+
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <title>Portafolio – Isaac Zarza</title>
 
   <!-- CSS PERSONALIZADO -->
   <link rel="stylesheet" href="css/fase3-styles.css?v=100000">
 
   <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <!-- DEVICON ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -22,16 +22,15 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" data-aos="fade-down">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
@@ -41,78 +40,68 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="inicio" class="text-center py-5">
+  <!-- INICIO -->
+  <header id="inicio" class="vh-100 d-flex align-items-center text-center bg-light">
     <div class="container">
-      <h1 class="fw-bold" data-aos="fade-up" data-aos-duration="1000">¡Hola, soy Isaac Zarza!</h1>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">Desarrollador web en formación — HTML, CSS, JavaScript y Python.</p>
-      <a href="#proyectos" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="300">Ver mis proyectos</a>
+      <h1 class="fw-bold mb-3" data-aos="fade-up">Hola, soy Isaac Zarza</h1>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        Programador en formación — creando proyectos con dedicación y pasión.
+      </p>
+      <a href="#proyectos" class="btn btn-primary btn-lg mt-3" data-aos="fade-up" data-aos-delay="300">
+        Ver Proyectos
+      </a>
     </div>
   </header>
 
-  <!-- HABILIDADES -->
-  <section id="habilidades" class="py-5">
+  <!-- HABILIDADES (RESTAURADA — BONITA) -->
+  <section id="habilidades" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">Habilidades</h2>
 
-      <div class="row justify-content-center g-4">
+      <h2 class="fw-bold text-center mb-4" data-aos="zoom-in">Habilidades</h2>
+
+      <div class="row g-4 justify-content-center">
 
         <!-- HTML -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/html.png" class="habilidad-icono mb-2" alt="HTML">
-            <h5 class="mt-2">HTML</h5>
-          </div>
+        <div class="col-6 col-md-2 text-center" data-aos="flip-left">
+          <i class="devicon-html5-plain colored" style="font-size: 60px;"></i>
+          <div class="p-3 shadow-sm rounded bg-white mt-2">HTML</div>
         </div>
 
         <!-- CSS -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left" data-aos-delay="100">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/css.png" class="habilidad-icono mb-2" alt="CSS">
-            <h5 class="mt-2">CSS</h5>
-          </div>
+        <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="100">
+          <i class="devicon-css3-plain colored" style="font-size: 60px;"></i>
+          <div class="p-3 shadow-sm rounded bg-white mt-2">CSS</div>
         </div>
 
         <!-- JavaScript -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left" data-aos-delay="200">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/js.png" class="habilidad-icono mb-2" alt="JavaScript">
-            <h5 class="mt-2">JavaScript</h5>
-          </div>
+        <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="200">
+          <i class="devicon-javascript-plain colored" style="font-size: 60px;"></i>
+          <div class="p-3 shadow-sm rounded bg-white mt-2">JavaScript</div>
         </div>
 
         <!-- Python -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left" data-aos-delay="300">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/python.png" class="habilidad-icono mb-2" alt="Python">
-            <h5 class="mt-2">Python</h5>
-          </div>
+        <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="300">
+          <i class="devicon-python-plain colored" style="font-size: 60px;"></i>
+          <div class="p-3 shadow-sm rounded bg-white mt-2">Python</div>
         </div>
 
         <!-- SQL -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left" data-aos-delay="400">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/sql.png" class="habilidad-icono mb-2" alt="SQL">
-            <h5 class="mt-2">SQL</h5>
-          </div>
-        </div>
-
-        <!-- Git -->
-        <div class="col-6 col-md-4 col-lg-2 text-center" data-aos="flip-left" data-aos-delay="500">
-          <div class="p-3 shadow-sm rounded bg-white habilidad-card">
-            <img src="img/git.png" class="habilidad-icono mb-2" alt="Git">
-            <h5 class="mt-2">Git</h5>
-          </div>
+        <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="400">
+          <i class="devicon-mysql-plain colored" style="font-size: 60px;"></i>
+          <div class="p-3 shadow-sm rounded bg-white mt-2">SQL</div>
         </div>
 
       </div>
+
     </div>
   </section>
 
   <!-- CONTADOR -->
   <section class="container text-center py-5">
     <h2 id="contador" data-aos="fade-up">0</h2>
-    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">Haz clic aquí</button>
+    <button id="btnContar" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200">
+      Haz clic aquí
+    </button>
   </section>
 
   <!-- PROYECTOS -->
@@ -170,7 +159,6 @@
         <textarea class="form-control mb-3" rows="5" placeholder="Mensaje" required></textarea>
         <button class="btn btn-primary w-100 py-2" type="submit">Enviar</button>
       </form>
-
     </div>
   </section>
 
@@ -179,17 +167,17 @@
     © 2025 Isaac Zarza — Portafolio de Programador
   </footer>
 
-  <!-- SCRIPT: SALUDO -->
+  <!-- SALUDO EN CONSOLA -->
   <script>
     console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
   </script>
 
-  <!-- SCRIPT: CONTADOR -->
+  <!-- CONTADOR -->
   <script>
     let numero = 0;
-    document.getElementById("btnContar").addEventListener("click", function () {
-      numero++;
-      document.getElementById("contador").innerText = numero;
+    document.getElementById("btnContar").addEventListener("click", function() {
+        numero++;
+        document.getElementById("contador").innerText = numero;
     });
   </script>
 
