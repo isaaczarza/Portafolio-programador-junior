@@ -201,6 +201,22 @@
     console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
   </script>
 
+  <!-- API -->
+  <script>
+  fetch("https://api.quotable.io/random")
+    .then(response => response.json())
+    .then(data => {
+      console.log("Frase recibida de la API:");
+      console.log(data.content);
+      console.log("Autor:", data.author);
+    })
+    .catch(error => {
+      console.error("Error al conectar con la API:", error);
+    });
+</script>
+
+  
+
   <!-- CONTADOR -->
   <script>
     let numero = 0;
