@@ -201,19 +201,20 @@
     console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
   </script>
 
-  <!-- API FRASES -->
+  <!-- API FRASES (SIN CORS) -->
 <script>
-  fetch("https://zenquotes.io/api/random")
+  fetch("https://type.fit/api/quotes")
     .then(response => response.json())
     .then(data => {
+      const fraseAleatoria = data[Math.floor(Math.random() * data.length)];
       console.log("Frase recibida de la API:");
-      console.log(data[0].q);
-      console.log("Autor:", data[0].a);
+      console.log(fraseAleatoria.text);
+      console.log("Autor:", fraseAleatoria.author);
     })
     .catch(error => {
       console.error("Error al conectar con la API:", error);
     });
-</script>
+</script>  
 
 
   <!-- CONTADOR -->
