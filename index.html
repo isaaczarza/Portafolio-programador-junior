@@ -201,21 +201,20 @@
     console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
   </script>
 
-  <!-- API -->
-  <script>
-  fetch("https://api.quotable.io/random")
+  <!-- API FRASES -->
+<script>
+  fetch("https://zenquotes.io/api/random")
     .then(response => response.json())
     .then(data => {
       console.log("Frase recibida de la API:");
-      console.log(data.content);
-      console.log("Autor:", data.author);
+      console.log(data[0].q);
+      console.log("Autor:", data[0].a);
     })
     .catch(error => {
       console.error("Error al conectar con la API:", error);
     });
 </script>
 
-  
 
   <!-- CONTADOR -->
   <script>
