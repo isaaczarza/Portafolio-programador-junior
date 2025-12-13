@@ -6,6 +6,24 @@
 
   <title>Portafolio – Isaac Zarza</title>
 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  fetch("https://api.quotable.io/quotes/random?limit=1")
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("frase").innerText = `"${data[0].content}"`;
+      document.getElementById("autor").innerText = `— ${data[0].author}`;
+    })
+    .catch(error => {
+      document.getElementById("frase").innerText = "No se pudo cargar la frase 😢";
+      console.error(error);
+    });
+
+});
+</script>
+
+
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -56,6 +74,16 @@
       </a>
     </div>
   </header>
+  
+  <!-- FRASE MOTIVACIONAL -->
+<section class="py-4">
+  <div class="container text-center">
+    <div class="p-4 rounded shadow-sm bg-white">
+      <p id="frase" class="fs-5 mb-2">Cargando frase...</p>
+      <small id="autor" class="text-muted"></small>
+    </div>
+  </div>
+</section>
 
   <!-- HABILIDADES -->
   <section id="habilidades" class="py-5 bg-light">
@@ -114,14 +142,6 @@
       // SALUDO
       console.log("¡Hola Isaac! Bienvenido a mi portafolio.");
 
-      // API FRASES
-      fetch("https://type.fit/api/quotes")
-        .then(res => res.json())
-        .then(data => {
-          const frase = data[Math.floor(Math.random() * data.length)];
-          console.log("Frase:", frase.text);
-          console.log("Autor:", frase.author);
-        });
 
       // CONTADOR
       let numero = 0;
