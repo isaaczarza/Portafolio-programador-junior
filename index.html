@@ -119,47 +119,63 @@
 
   <!-- PROYECTOS -->
   <section id="proyectos" class="py-5">
-    <div class="container">
-      <h2 class="fw-bold text-center mb-4" data-aos="fade-right">Proyectos</h2>
+  <div class="container">
 
-      <div class="row g-4">
+    <h2 class="fw-bold text-center mb-4" data-aos="fade-right">
+      Proyectos
+    </h2>
 
-        <div class="col-md-4" data-aos="zoom-in">
-          <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 1</h5>
-              <p class="card-text">Descripción breve del proyecto.</p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
+    <div class="accordion" id="accordionProyectos">
+
+      <!-- Proyecto 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto1">
+            Proyecto HTML
+          </button>
+        </h2>
+        <div id="proyecto1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Proyecto realizado con HTML.  
+            <br>
+            <a href="#" class="btn btn-sm btn-success mt-2">Ver proyecto</a>
           </div>
         </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-          <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 2</h5>
-              <p class="card-text">Descripción breve del proyecto.</p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card shadow-sm">
-            <div class="placeholder-img bg-secondary" style="height:150px;"></div>
-            <div class="card-body">
-              <h5 class="card-title">Proyecto 3</h5>
-              <p class="card-text">Descripción breve del proyecto.</p>
-              <a href="#" class="btn btn-outline-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-
       </div>
+
+      <!-- Proyecto 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto2">
+            Proyecto CSS
+          </button>
+        </h2>
+        <div id="proyecto2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Proyecto realizado con CSS.
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#proyecto3">
+            Proyecto JavaScript
+          </button>
+        </h2>
+        <div id="proyecto3" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Proyecto con JavaScript.
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+  </div>
+</section>
+
 
   <!-- CONTACTO -->
   <section id="contacto" class="py-5 bg-light">
