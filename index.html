@@ -18,10 +18,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
-<body style="background-color:#f7f5ef;">
+<body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -39,7 +39,7 @@
 </nav>
 
 <!-- INICIO -->
-<header id="inicio" class="d-flex align-items-center text-center py-5" style="min-height:60vh;">
+<header id="inicio" class="d-flex align-items-center text-center">
   <div class="container">
     <h1 class="fw-bold mb-3" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
     <p class="lead" data-aos="fade-up" data-aos-delay="200">
@@ -68,55 +68,40 @@
 
     <div class="row g-4 justify-content-center">
 
-      <!-- HTML -->
       <div class="col-6 col-md-2 text-center" data-aos="flip-left">
-        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-          <i class="devicon-html5-plain colored fs-1"></i>
-        </a>
+        <i class="devicon-html5-plain colored fs-1"></i>
         <div class="p-3 shadow-sm rounded bg-white mt-2">
           HTML<br>
           <a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
         </div>
       </div>
 
-      <!-- CSS -->
       <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="100">
-        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-          <i class="devicon-css3-plain colored fs-1"></i>
-        </a>
+        <i class="devicon-css3-plain colored fs-1"></i>
         <div class="p-3 shadow-sm rounded bg-white mt-2">
           CSS<br>
           <a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
         </div>
       </div>
 
-      <!-- JavaScript -->
       <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="200">
-        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
-          <i class="devicon-javascript-plain colored fs-1"></i>
-        </a>
+        <i class="devicon-javascript-plain colored fs-1"></i>
         <div class="p-3 shadow-sm rounded bg-white mt-2">
           JavaScript<br>
           <a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
         </div>
       </div>
 
-      <!-- Python -->
       <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="300">
-        <a href="https://www.python.org/" target="_blank">
-          <i class="devicon-python-plain colored fs-1"></i>
-        </a>
+        <i class="devicon-python-plain colored fs-1"></i>
         <div class="p-3 shadow-sm rounded bg-white mt-2">
           Python<br>
           <a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
         </div>
       </div>
 
-      <!-- SQL -->
       <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="400">
-        <a href="https://dev.mysql.com/doc/" target="_blank">
-          <i class="devicon-mysql-plain colored fs-1"></i>
-        </a>
+        <i class="devicon-mysql-plain colored fs-1"></i>
         <div class="p-3 shadow-sm rounded bg-white mt-2">
           SQL<br>
           <a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
@@ -206,7 +191,7 @@
   </div>
 </section>
 
-<footer class="bg-dark text-white text-center py-3">
+<footer>
   © 2025 Isaac Zarza
 </footer>
 
@@ -223,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const frase = frases[Math.floor(Math.random() * frases.length)];
   document.getElementById("frase").innerText = `"${frase.texto}"`;
   document.getElementById("autor").innerText = `— ${frase.autor}`;
-  AOS.init({ once:true, duration:800 });
+  AOS.init({ once: true, duration: 800 });
 });
 </script>
 
