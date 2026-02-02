@@ -1,60 +1,62 @@
-# Portafolio-programador-junior
-Portafolio web desarrollado como parte del proyecto de Implementación y Diseño Web. Incluye mi marca personal, habilidades, proyectos y primeros desarrollos como programador junior.
+🧑‍💻 Portafolio – Desarrollador Web Junior
 
-<div style="text-align:center; padding:20px;">
-    <h1 style="color:#1ABC9C; font-size:40px;">🌐 Portafolio de Programador Junior</h1>
-    <h3 style="color:#16A085;">Desarrollado por Isaac Zarza</h3>
-</div>
+Este repositorio contiene mi portafolio personal como desarrollador web junior, donde presento mis habilidades técnicas, proyectos académicos y desarrollos personales, así como mi proceso de aprendizaje en el área de tecnología.
 
----
+El objetivo de este proyecto es mostrar mi perfil profesional y documentar mi crecimiento como desarrollador.
 
-## ✅ Sobre el proyecto
-Este sitio web es mi **portafolio profesional** como programador junior.  
-Forma parte del proyecto de la materia **Implementación y Diseño Web**, y al mismo tiempo funciona como mi tarjeta de presentación para oportunidades laborales y futuras prácticas profesionales.
+🚀 Tecnologías utilizadas
 
----
+HTML5 – Estructura y maquetación del sitio
 
-## 🧑‍💻 Tecnologías utilizadas
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **Python (básico)**
-- **Bases de datos SQL**
-- **Amazon Web Services (conceptos básicos)**
+CSS3 – Estilos, diseño visual y responsivo
 
----
+JavaScript – Interactividad básica del sitio
 
-## 🎯 Objetivo del sitio
-- Construir una **marca personal** profesional en el ámbito del desarrollo web.  
-- Mostrar mis **habilidades técnicas**, mi crecimiento y mis proyectos.  
-- Publicar mis avances como estudiante de **Programación y Transformación Digital**.
+Python – Lógica de programación (nivel básico)
 
----
+SQL – Fundamentos de bases de datos
 
-## 🗂️ Contenido del portafolio
-- Presentación personal  
-- Sección de habilidades  
-- Proyectos realizados (se irán agregando)  
-- Datos de contacto  
+Git & GitHub – Control de versiones
 
----
+AWS – Conceptos básicos de nube
 
-## 🚀 Publicación del sitio
-Este portafolio está publicado con **GitHub Pages**.
+📂 Sobre el proyecto
 
-👉 Puedes verlo aquí: *(Agrega tu URL cuando se genere)*  
+Este portafolio funciona como:
 
----
+Carta de presentación profesional
 
-## 📫 Contacto
-Si deseas ponerte en contacto conmigo, puedes hacerlo aquí:
+Espacio para mostrar proyectos actuales y futuros
 
-📧 **Correo:** *(Tu correo)*  
-🔗 **LinkedIn:** *(opcional, si quieres agregarlo después)*  
+Evidencia de mis conocimientos en desarrollo web
 
----
+Forma parte de mi formación en la Licenciatura en Programación y Transformación Digital.
 
-<div style="text-align:center; margin-top:40px;">
-    <h3 style="color:#1ABC9C;">Gracias por visitar mi portafolio 💻✨</h3>
-</div>
+🧩 Contenido del portafolio
 
+Presentación personal
+
+Habilidades técnicas
+
+Proyectos (en proceso de publicación)
+
+Información de contacto
+
+🌐 Sitio publicado
+
+El portafolio se encuentra publicado mediante GitHub Pages:
+
+👉 https://isaaczarza.github.io/Portafolio-programador-junior/
+
+📫 Contacto
+
+📍 Ciudad de México
+
+✉️ Correo: isaac.zarza17@gmail.com
+
+💼 LinkedIn: 
+
+📝 Nota
+
+Este repositorio representa mi proceso de aprendizaje como desarrollador web junior.
+Me encuentro en constante formación y abierto a oportunidades para seguir creciendo profesionalmente dentro del sector tecnológico.
