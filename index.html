@@ -1,501 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portafolio – Isaac Zarza</title>
+    <meta charset="UTF-8">
+    <title>Portafolio | Isaac Zarza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }
 
-  <!-- CSS PERSONAL -->
-  <link rel="stylesheet" href="css/fase3-styles.css?v=100000">
+        header {
+            background-color: #0d1117;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
 
-  <!-- AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        header h1 {
+            margin: 0;
+        }
 
-  <!-- DEVICON -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+        header p {
+            margin: 5px 0 0 0;
+            color: #9da5b4;
+        }
 
-  <!-- ESTILO PARA TARJETAS DE PROYECTOS -->
-  <style>
-    .project-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
+        nav {
+            background-color: #161b22;
+            padding: 10px;
+            text-align: center;
+        }
 
-    .project-card:hover {
-      transform: translateY(-3px);
-    }
-  </style>
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e6e6e6;
+            padding-bottom: 10px;
+        }
+
+        .project {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .tech {
+            color: #58a6ff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #e6edf3;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0d1117;
+            color: #9da5b4;
+        }
+
+        .contact a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- INICIO -->
-<header id="inicio" class="d-flex align-items-center text-center">
-  <div class="container">
-    <h1 class="fw-bold mb-3" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
-
-    <p class="lead" data-aos="fade-up" data-aos-delay="200">
-      Desarrollador web junior enfocado en HTML, CSS, JavaScript y Python.
-      Construyo proyectos reales para fortalecer mis habilidades y prepararme para el entorno profesional.
-    </p>
-
-    <a href="#proyectos" class="btn btn-success btn-lg mt-3">
-      Ver mis proyectos
-    </a>
-
-  </div>
+<header>
+    <h1>Isaac Zarza</h1>
+    <p>Desarrollador Web | HTML, CSS, JavaScript y Python</p>
 </header>
 
+<nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-<!-- FRASE -->
-<section class="py-4">
-  <div class="container text-center">
-    <div class="p-4 bg-white rounded shadow-sm">
-      <p id="frase" class="fs-5 mb-2"></p>
-      <small id="autor" class="text-muted"></small>
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy desarrollador web enfocado en la creación de aplicaciones y sitios modernos,
+        funcionales y bien estructurados. Tengo experiencia trabajando con HTML, CSS,
+        JavaScript y Python, desarrollando proyectos personales y profesionales que
+        fortalecen mis habilidades en frontend y backend.
+    </p>
+
+    <p>
+        Actualmente me enfoco en mejorar mis habilidades en desarrollo web, arquitectura
+        de software y construcción de aplicaciones reales que aporten valor.
+    </p>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="project">
+        <h3>Portafolio Web Profesional</h3>
+        <p class="tech">Tecnologías: HTML, CSS</p>
+
+        <p>
+            Desarrollo de un portafolio web personal estructurado con buenas prácticas de HTML y diseño moderno.
+            El sitio presenta información profesional, habilidades técnicas y proyectos organizados por tecnología.
+        </p>
+
+        <p>
+            Este proyecto demuestra mis conocimientos en estructura semántica, diseño responsivo
+            y organización profesional de proyectos.
+        </p>
     </div>
-  </div>
+
+    <div class="project">
+        <h3>Aplicación Web con JavaScript</h3>
+        <p class="tech">Tecnologías: HTML, CSS, JavaScript</p>
+
+        <p>
+            Desarrollo de una aplicación interactiva utilizando JavaScript para manipulación
+            del DOM, manejo de eventos y lógica de programación.
+        </p>
+
+        <p>
+            El proyecto demuestra habilidades en programación frontend, interacción con el usuario
+            y estructura de código limpia.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Proyecto Backend en Python</h3>
+        <p class="tech">Tecnologías: Python</p>
+
+        <p>
+            Desarrollo de un proyecto utilizando Python enfocado en lógica de programación,
+            estructura de código modular y buenas prácticas de desarrollo.
+        </p>
+
+        <p>
+            Este proyecto demuestra habilidades en programación backend, resolución de problemas
+            y organización profesional del código.
+        </p>
+    </div>
+
 </section>
 
+<section id="habilidades">
+    <h2>Habilidades Técnicas</h2>
 
-<!-- HABILIDADES -->
-<section id="habilidades" class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="fw-bold text-center mb-4">Habilidades</h2>
-
-<div class="row g-4 justify-content-center">
-
-
-<!-- HTML -->
-<div class="col-6 col-md-2 text-center">
-
-<i class="devicon-html5-plain colored fs-1"></i>
-
-<div class="p-3 shadow-sm rounded bg-white mt-2">
-
-HTML
-
-<a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
-
-</div>
-</div>
-
-
-<!-- CSS -->
-<div class="col-6 col-md-2 text-center">
-
-<i class="devicon-css3-plain colored fs-1"></i>
-
-<div class="p-3 shadow-sm rounded bg-white mt-2">
-
-CSS
-
-<a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
-
-</div>
-</div>
-
-
-<!-- JavaScript -->
-<div class="col-6 col-md-2 text-center">
-
-<i class="devicon-javascript-plain colored fs-1"></i>
-
-<div class="p-3 shadow-sm rounded bg-white mt-2">
-
-JavaScript
-
-<a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
-
-</div>
-</div>
-
-
-<!-- Python -->
-<div class="col-6 col-md-2 text-center">
-
-<i class="devicon-python-plain colored fs-1"></i>
-
-<div class="p-3 shadow-sm rounded bg-white mt-2">
-
-Python
-
-<a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
-
-</div>
-</div>
-
-
-<!-- SQL -->
-<div class="col-6 col-md-2 text-center">
-
-<i class="devicon-mysql-plain colored fs-1"></i>
-
-<div class="p-3 shadow-sm rounded bg-white mt-2">
-
-SQL
-
-<a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
-
-</div>
-</div>
-
-
-</div>
-</div>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Desarrollo Web</span>
+    </div>
 </section>
 
-
-
-<!-- PROYECTOS -->
-<section id="proyectos" class="py-5">
-
-<div class="container">
-
-<h2 class="fw-bold text-center mb-4">
-Proyectos académicos y personales
-</h2>
-
-<div class="accordion" id="accordionProyectos">
-
-
-<!-- HTML -->
-<div class="accordion-item" id="proyecto-html">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button"
-data-bs-toggle="collapse"
-data-bs-target="#html">
-
-HTML
-
-</button>
-
-</h2>
-
-<div id="html"
-class="accordion-collapse collapse show">
-
-<div class="accordion-body">
-
-
-<div class="project-card">
-
-<h5>Portafolio Web Personal</h5>
-
-<p>
-Portafolio profesional desarrollado con HTML5, CSS3 y Bootstrap.
-Incluye diseño responsive, animaciones y estructura moderna.
-</p>
-
-<p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
-
-<a href="https://github.com/isaaczarza/Portafolio-programador-junior"
-target="_blank"
-class="btn btn-dark btn-sm">
-Ver código
-</a>
-
-<a href="https://isaaczarza.github.io/Portafolio-programador-junior/"
-target="_blank"
-class="btn btn-success btn-sm">
-Ver demo
-</a>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
-<!-- CSS -->
-<div class="accordion-item" id="proyecto-css">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#css">
-
-CSS
-
-</button>
-
-</h2>
-
-<div id="css"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-
-<div class="project-card">
-
-<h5>Diseño visual del portafolio</h5>
-
-<p>
-Aplicación de estilos CSS modernos, responsive design,
-tipografía profesional y mejora de experiencia de usuario.
-</p>
-
-<p><strong>Tecnologías:</strong> CSS3</p>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
-<!-- JAVASCRIPT -->
-<div class="accordion-item" id="proyecto-js">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#js">
-
-JavaScript
-
-</button>
-
-</h2>
-
-<div id="js"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-
-<div class="project-card">
-
-<h5>Sistema de frases dinámicas</h5>
-
-<p>
-Implementación de JavaScript para manipulación del DOM,
-generación dinámica de contenido y lógica interactiva.
-</p>
-
-<p><strong>Tecnologías:</strong> JavaScript</p>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
-<!-- PYTHON -->
-<div class="accordion-item" id="proyecto-python">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#python">
-
-Python
-
-</button>
-
-</h2>
-
-<div id="python"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-
-<div class="project-card">
-
-<h5>Juego Par o Impar (Backend)</h5>
-
-<p>
-Sistema desarrollado en Python que implementa la lógica completa
-del juego Par o Impar, incluyendo validaciones, generación de
-números aleatorios y determinación de resultados.
-</p>
-
-<p><strong>Tecnologías:</strong> Python</p>
-
-<a href="https://github.com/isaaczarza/juegos-backend-par-impar"
-target="_blank"
-class="btn btn-dark btn-sm">
-
-Ver código
-
-</a>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-
-<!-- SQL -->
-<div class="accordion-item" id="proyecto-sql">
-
-<h2 class="accordion-header">
-
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#sql">
-
-SQL
-
-</button>
-
-</h2>
-
-<div id="sql"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-
-<div class="project-card">
-
-<h5>Proyecto de base de datos</h5>
-
-<p>
-Proyecto introductorio de SQL trabajando con consultas,
-estructura de tablas y relaciones.
-</p>
-
-<p><strong>Tecnologías:</strong> SQL</p>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contact">
+        <p>Email: tuemail@email.com</p>
+        <p>GitHub: <a href="#">https://github.com/tuusuario</a></p>
+        <p>LinkedIn: <a href="#">https://linkedin.com/in/tuusuario</a></p>
+    </div>
 </section>
 
-
-
-<!-- CONTACTO -->
-<section id="contacto" class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="fw-bold text-center mb-4">
-Contacto
-</h2>
-
-<form class="mx-auto" style="max-width:600px;">
-
-<input class="form-control mb-3"
-placeholder="Nombre">
-
-<input class="form-control mb-3"
-placeholder="Correo">
-
-<textarea class="form-control mb-3"
-rows="4"
-placeholder="Mensaje"></textarea>
-
-<button class="btn btn-primary w-100">
-Enviar
-</button>
-
-</form>
-
-</div>
-</section>
-
-
-<footer class="text-center py-3">
-
-© 2026 Isaac Zarza
-
+<footer>
+    <p>© 2026 Isaac Zarza | Portafolio Profesional</p>
 </footer>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-
-document.addEventListener("DOMContentLoaded", () => {
-
-const frases = [
-
-{ texto: "Aprender a programar es aprender a pensar.", autor: "Steve Jobs" },
-
-{ texto: "Primero haz que funcione, luego hazlo elegante.", autor: "Kent Beck" },
-
-{ texto: "La práctica hace al programador.", autor: "Anónimo" }
-
-];
-
-const frase = frases[Math.floor(Math.random() * frases.length)];
-
-document.getElementById("frase").innerText = `"${frase.texto}"`;
-
-document.getElementById("autor").innerText = `— ${frase.autor}`;
-
-AOS.init();
-
-});
-
-</script>
 
 </body>
 </html>
