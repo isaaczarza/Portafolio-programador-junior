@@ -16,6 +16,23 @@
 
   <!-- DEVICON -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- ESTILO PARA TARJETAS DE PROYECTOS -->
+  <style>
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+
 </head>
 
 <body>
@@ -27,6 +44,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
@@ -42,14 +60,19 @@
 <header id="inicio" class="d-flex align-items-center text-center">
   <div class="container">
     <h1 class="fw-bold mb-3" data-aos="fade-up">¡Hola, soy Isaac Zarza!</h1>
+
     <p class="lead" data-aos="fade-up" data-aos-delay="200">
-    Desarrollador web junior en formación, enfocado en crear proyectos funcionales y seguir aprendiendo buenas prácticas.
+      Desarrollador web junior enfocado en HTML, CSS, JavaScript y Python.
+      Construyo proyectos reales para fortalecer mis habilidades y prepararme para el entorno profesional.
     </p>
-    <a href="#proyectos" class="btn btn-success btn-lg mt-3" data-aos="zoom-in">
+
+    <a href="#proyectos" class="btn btn-success btn-lg mt-3">
       Ver mis proyectos
     </a>
+
   </div>
 </header>
+
 
 <!-- FRASE -->
 <section class="py-4">
@@ -61,224 +84,417 @@
   </div>
 </section>
 
-  <!-- HABILIDADES -->
+
 <!-- HABILIDADES -->
 <section id="habilidades" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="zoom-in">Habilidades</h2>
 
-    <div class="row g-4 justify-content-center">
+<div class="container">
 
-      <div class="col-6 col-md-2 text-center" data-aos="flip-left">
-        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
-          <i class="devicon-html5-plain colored fs-1"></i>
-        </a>
-        <div class="p-3 shadow-sm rounded bg-white mt-2">
-          HTML<br>
-          <a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
-        </div>
-      </div>
+<h2 class="fw-bold text-center mb-4">Habilidades</h2>
 
-      <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="100">
-        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
-          <i class="devicon-css3-plain colored fs-1"></i>
-        </a>
-        <div class="p-3 shadow-sm rounded bg-white mt-2">
-          CSS<br>
-          <a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
-        </div>
-      </div>
+<div class="row g-4 justify-content-center">
 
-      <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="200">
-        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
-          <i class="devicon-javascript-plain colored fs-1"></i>
-        </a>
-        <div class="p-3 shadow-sm rounded bg-white mt-2">
-          JavaScript<br>
-          <a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
-        </div>
-      </div>
 
-      <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="300">
-        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
-          <i class="devicon-python-plain colored fs-1"></i>
-        </a>
-        <div class="p-3 shadow-sm rounded bg-white mt-2">
-          Python<br>
-          <a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
-        </div>
-      </div>
+<!-- HTML -->
+<div class="col-6 col-md-2 text-center">
 
-      <div class="col-6 col-md-2 text-center" data-aos="flip-left" data-aos-delay="400">
-        <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
-          <i class="devicon-mysql-plain colored fs-1"></i>
-        </a>
-        <div class="p-3 shadow-sm rounded bg-white mt-2">
-          SQL<br>
-          <a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">Ver proyecto</a>
-        </div>
-      </div>
+<i class="devicon-html5-plain colored fs-1"></i>
 
-    </div>
-  </div>
+<div class="p-3 shadow-sm rounded bg-white mt-2">
+
+HTML
+
+<a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">
+Ver proyectos
+</a>
+
+</div>
+</div>
+
+
+<!-- CSS -->
+<div class="col-6 col-md-2 text-center">
+
+<i class="devicon-css3-plain colored fs-1"></i>
+
+<div class="p-3 shadow-sm rounded bg-white mt-2">
+
+CSS
+
+<a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">
+Ver proyectos
+</a>
+
+</div>
+</div>
+
+
+<!-- JavaScript -->
+<div class="col-6 col-md-2 text-center">
+
+<i class="devicon-javascript-plain colored fs-1"></i>
+
+<div class="p-3 shadow-sm rounded bg-white mt-2">
+
+JavaScript
+
+<a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">
+Ver proyectos
+</a>
+
+</div>
+</div>
+
+
+<!-- Python -->
+<div class="col-6 col-md-2 text-center">
+
+<i class="devicon-python-plain colored fs-1"></i>
+
+<div class="p-3 shadow-sm rounded bg-white mt-2">
+
+Python
+
+<a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">
+Ver proyectos
+</a>
+
+</div>
+</div>
+
+
+<!-- SQL -->
+<div class="col-6 col-md-2 text-center">
+
+<i class="devicon-mysql-plain colored fs-1"></i>
+
+<div class="p-3 shadow-sm rounded bg-white mt-2">
+
+SQL
+
+<a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">
+Ver proyectos
+</a>
+
+</div>
+</div>
+
+
+</div>
+</div>
 </section>
 
 
 
 <!-- PROYECTOS -->
 <section id="proyectos" class="py-5">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4" data-aos="fade-right">Proyectos académicos y personales</h2>
 
-    <div class="accordion" id="accordionProyectos">
+<div class="container">
 
-      <div class="accordion-item" id="proyecto-html">
-        <h2 class="accordion-header">
-          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#html">
-            Proyecto HTML
-          </button>
-        </h2>
-        <div id="html" class="accordion-collapse collapse show">
-            <div class="accordion-body">
+<h2 class="fw-bold text-center mb-4">
+Proyectos académicos y personales
+</h2>
 
-  <p>
-    Portafolio web personal desarrollado con HTML5, CSS3 y Bootstrap.
-    Incluye diseño responsive, animaciones con AOS y estructura profesional.
-  </p>
+<div class="accordion" id="accordionProyectos">
 
-  <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, JavaScript</p>
 
-  <div class="d-flex gap-2 flex-wrap">
+<!-- HTML -->
+<div class="accordion-item" id="proyecto-html">
 
-    <a href="https://github.com/isaaczarza/Portafolio-programador-junior"
-       target="_blank"
-       class="btn btn-dark btn-sm">
-       Ver código
-    </a>
+<h2 class="accordion-header">
 
-    <a href="https://isaaczarza.github.io/Portafolio-programador-junior/"
-       target="_blank"
-       class="btn btn-success btn-sm">
-       Ver demo
-    </a>
+<button class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#html">
 
-  </div>
+HTML
 
-</div>
-        </div>
-      </div>
+</button>
 
-      <div class="accordion-item" id="proyecto-css">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#css">
-            Proyecto CSS
-          </button>
-        </h2>
-        <div id="css" class="accordion-collapse collapse">
-          <div class="accordion-body">Proyecto orientado al diseño visual utilizando CSS3, aplicando estilos responsivos, tipografía, colores y estructura visual para mejorar la experiencia del usuario.</div>
-        </div>
-      </div>
+</h2>
 
-      <div class="accordion-item" id="proyecto-js">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#js">
-            Proyecto JavaScript
-          </button>
-        </h2>
-        <div id="js" class="accordion-collapse collapse">
-          <div class="accordion-body">Proyecto práctico donde implementé interactividad básica con JavaScript, manejo del DOM y lógica simple para mejorar el comportamiento dinámico del sitio.</div>
-        </div>
-      </div>
+<div id="html"
+class="accordion-collapse collapse show">
 
-      <div class="accordion-item" id="proyecto-python">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#python">
-            Proyecto Python
-          </button>
-        </h2>
-        <div id="python" class="accordion-collapse collapse">
-          <div class="accordion-body">
+<div class="accordion-body">
 
-  <p>
-    Juego backend desarrollado en Python donde se implementa la lógica
-    del juego "Par o Impar". El sistema recibe la elección del usuario,
-    genera un número aleatorio y determina el ganador.
-  </p>
 
-  <p>
-    Este proyecto me permitió reforzar estructuras de control,
-    funciones, validaciones y lógica de programación.
-  </p>
+<div class="project-card">
 
-  <p><strong>Tecnologías:</strong> Python</p>
+<h5>Portafolio Web Personal</h5>
 
-  <div class="d-flex gap-2 flex-wrap">
+<p>
+Portafolio profesional desarrollado con HTML5, CSS3 y Bootstrap.
+Incluye diseño responsive, animaciones y estructura moderna.
+</p>
 
-    <a href="https://github.com/isaaczarza/juegos-backend-par-impar"
-       target="_blank"
-       class="btn btn-dark btn-sm">
-       Ver código
-    </a>
+<p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
 
-  </div>
+<a href="https://github.com/isaaczarza/Portafolio-programador-junior"
+target="_blank"
+class="btn btn-dark btn-sm">
+Ver código
+</a>
+
+<a href="https://isaaczarza.github.io/Portafolio-programador-junior/"
+target="_blank"
+class="btn btn-success btn-sm">
+Ver demo
+</a>
 
 </div>
-        </div>
-      </div>
 
-      <div class="accordion-item" id="proyecto-sql">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sql">
-            Proyecto SQL
-          </button>
-        </h2>
-        <div id="sql" class="accordion-collapse collapse">
-          <div class="accordion-body">Proyecto introductorio de bases de datos, donde trabajé con conceptos fundamentales de SQL, como consultas básicas, estructura de tablas y relaciones.</div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- CSS -->
+<div class="accordion-item" id="proyecto-css">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#css">
+
+CSS
+
+</button>
+
+</h2>
+
+<div id="css"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+
+<div class="project-card">
+
+<h5>Diseño visual del portafolio</h5>
+
+<p>
+Aplicación de estilos CSS modernos, responsive design,
+tipografía profesional y mejora de experiencia de usuario.
+</p>
+
+<p><strong>Tecnologías:</strong> CSS3</p>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+<div class="accordion-item" id="proyecto-js">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#js">
+
+JavaScript
+
+</button>
+
+</h2>
+
+<div id="js"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+
+<div class="project-card">
+
+<h5>Sistema de frases dinámicas</h5>
+
+<p>
+Implementación de JavaScript para manipulación del DOM,
+generación dinámica de contenido y lógica interactiva.
+</p>
+
+<p><strong>Tecnologías:</strong> JavaScript</p>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<!-- PYTHON -->
+<div class="accordion-item" id="proyecto-python">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#python">
+
+Python
+
+</button>
+
+</h2>
+
+<div id="python"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+
+<div class="project-card">
+
+<h5>Juego Par o Impar (Backend)</h5>
+
+<p>
+Sistema desarrollado en Python que implementa la lógica completa
+del juego Par o Impar, incluyendo validaciones, generación de
+números aleatorios y determinación de resultados.
+</p>
+
+<p><strong>Tecnologías:</strong> Python</p>
+
+<a href="https://github.com/isaaczarza/juegos-backend-par-impar"
+target="_blank"
+class="btn btn-dark btn-sm">
+
+Ver código
+
+</a>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+<!-- SQL -->
+<div class="accordion-item" id="proyecto-sql">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#sql">
+
+SQL
+
+</button>
+
+</h2>
+
+<div id="sql"
+class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+
+<div class="project-card">
+
+<h5>Proyecto de base de datos</h5>
+
+<p>
+Proyecto introductorio de SQL trabajando con consultas,
+estructura de tablas y relaciones.
+</p>
+
+<p><strong>Tecnologías:</strong> SQL</p>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
 </section>
+
+
 
 <!-- CONTACTO -->
 <section id="contacto" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="fw-bold text-center mb-4">Contacto</h2>
-    <form class="mx-auto" style="max-width:600px;">
-      <input class="form-control mb-3" placeholder="Nombre">
-      <input class="form-control mb-3" placeholder="Correo">
-      <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
-      <button class="btn btn-primary w-100">Enviar</button>
-    </form>
-  </div>
+
+<div class="container">
+
+<h2 class="fw-bold text-center mb-4">
+Contacto
+</h2>
+
+<form class="mx-auto" style="max-width:600px;">
+
+<input class="form-control mb-3"
+placeholder="Nombre">
+
+<input class="form-control mb-3"
+placeholder="Correo">
+
+<textarea class="form-control mb-3"
+rows="4"
+placeholder="Mensaje"></textarea>
+
+<button class="btn btn-primary w-100">
+Enviar
+</button>
+
+</form>
+
+</div>
 </section>
 
-<footer>
-  © 2025 Isaac Zarza
+
+<footer class="text-center py-3">
+
+© 2026 Isaac Zarza
+
 </footer>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const frases = [
-    { texto: "Aprender a programar es aprender a pensar.", autor: "Steve Jobs" },
-    { texto: "Primero haz que funcione, luego hazlo elegante.", autor: "Kent Beck" },
-    { texto: "La práctica hace al programador.", autor: "Anónimo" }
-  ];
-  const frase = frases[Math.floor(Math.random() * frases.length)];
-  document.getElementById("frase").innerText = `"${frase.texto}"`;
-  document.getElementById("autor").innerText = `— ${frase.autor}`;
-  AOS.init({ once: true, duration: 800 });
-});
-</script>
 
-  <script>
-  window.onload = function () {
-    window.scrollTo(0, 0);
-  };
+document.addEventListener("DOMContentLoaded", () => {
+
+const frases = [
+
+{ texto: "Aprender a programar es aprender a pensar.", autor: "Steve Jobs" },
+
+{ texto: "Primero haz que funcione, luego hazlo elegante.", autor: "Kent Beck" },
+
+{ texto: "La práctica hace al programador.", autor: "Anónimo" }
+
+];
+
+const frase = frases[Math.floor(Math.random() * frases.length)];
+
+document.getElementById("frase").innerText = `"${frase.texto}"`;
+
+document.getElementById("autor").innerText = `— ${frase.autor}`;
+
+AOS.init();
+
+});
+
 </script>
 
 </body>
