@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="utf-8">
@@ -10,27 +11,26 @@
 <!-- BOOTSTRAP -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- AOS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- CSS PERSONAL -->
+<link rel="stylesheet" href="css/fase3-styles.css">
 
 <!-- DEVICON -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-<!-- CSS -->
-<link rel="stylesheet" href="css/fase3-styles.css?v=100000">
-
 <style>
 
+html{
+scroll-behavior:auto;
+}
+
 body{
-padding-top:80px;
+padding-top:70px;
 }
 
 header{
-min-height:80vh;
+min-height:90vh;
 display:flex;
 align-items:center;
-justify-content:center;
-background:#f8f9fa;
 }
 
 .accordion-button{
@@ -39,20 +39,15 @@ color:white;
 }
 
 .accordion-button:not(.collapsed){
-background:#157347;
+background:#198754;
 color:white;
 }
 
 footer{
-text-align:center;
-padding:20px;
 background:#111;
 color:white;
-}
-
-.habilidad-icono a{
-text-decoration:none;
-color:inherit;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -61,65 +56,63 @@ color:inherit;
 
 <body>
 
-
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
 
 <div class="container">
 
-<a class="navbar-brand fw-bold" href="#inicio">Isaac Zarza</a>
+<a class="navbar-brand fw-bold" href="#">Isaac Zarza</a>
 
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+
 <span class="navbar-toggler-icon"></span>
+
 </button>
 
 <div class="collapse navbar-collapse" id="navMenu">
 
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="#inicio">Inicio</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="#habilidades">Habilidades</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="#proyectos">Proyectos</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
 
-<li class="nav-item">
-<a class="nav-link" href="#contacto">Contacto</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 
 </ul>
 
 </div>
+
 </div>
+
 </nav>
 
 
-<!-- HERO -->
+<!-- INICIO -->
 
-<header id="inicio">
+<header id="inicio" class="text-center">
 
-<div class="container text-center">
+<div class="container">
 
-<h1 class="fw-bold mb-3">
-Hola, soy Isaac Zarza
-</h1>
+<h1 class="fw-bold mb-3">¡Hola, soy Isaac Zarza!</h1>
 
 <p class="lead">
+
 Desarrollador web junior en formación, enfocado en crear proyectos funcionales y seguir aprendiendo buenas prácticas.
+
 </p>
 
 <a href="#proyectos" class="btn btn-success btn-lg mt-3">
+
 Ver mis proyectos
+
 </a>
 
 </div>
+
 </header>
 
 
@@ -132,6 +125,7 @@ Ver mis proyectos
 <div class="p-4 bg-white rounded shadow-sm">
 
 <p id="frase" class="fs-5 mb-2"></p>
+
 <small id="autor" class="text-muted"></small>
 
 </div>
@@ -141,23 +135,18 @@ Ver mis proyectos
 </section>
 
 
-
 <!-- HABILIDADES -->
 
 <section id="habilidades" class="py-5 bg-light">
 
 <div class="container">
 
-<h2 class="fw-bold text-center mb-5">
-Habilidades
-</h2>
+<h2 class="fw-bold text-center mb-4">Habilidades</h2>
 
 <div class="row g-4 justify-content-center">
 
 
-<!-- HTML -->
-
-<div class="col-6 col-md-2 text-center habilidad-icono">
+<div class="col-6 col-md-2 text-center">
 
 <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
 
@@ -169,17 +158,16 @@ Habilidades
 
 HTML
 
-<a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
+<br>
+
+<a href="#proyecto-html" class="btn btn-sm btn-outline-success mt-2">Ver proyectos</a>
 
 </div>
+
 </div>
 
 
-<!-- CSS -->
-
-<div class="col-6 col-md-2 text-center habilidad-icono">
+<div class="col-6 col-md-2 text-center">
 
 <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
 
@@ -191,17 +179,16 @@ Ver proyectos
 
 CSS
 
-<a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
+<br>
+
+<a href="#proyecto-css" class="btn btn-sm btn-outline-success mt-2">Ver proyectos</a>
 
 </div>
+
 </div>
 
 
-<!-- JS -->
-
-<div class="col-6 col-md-2 text-center habilidad-icono">
+<div class="col-6 col-md-2 text-center">
 
 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
 
@@ -213,17 +200,16 @@ Ver proyectos
 
 JavaScript
 
-<a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
+<br>
+
+<a href="#proyecto-js" class="btn btn-sm btn-outline-success mt-2">Ver proyectos</a>
 
 </div>
+
 </div>
 
 
-<!-- PYTHON -->
-
-<div class="col-6 col-md-2 text-center habilidad-icono">
+<div class="col-6 col-md-2 text-center">
 
 <a href="https://www.python.org" target="_blank">
 
@@ -235,19 +221,18 @@ Ver proyectos
 
 Python
 
-<a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
+<br>
+
+<a href="#proyecto-python" class="btn btn-sm btn-outline-success mt-2">Ver proyectos</a>
 
 </div>
+
 </div>
 
 
-<!-- SQL -->
+<div class="col-6 col-md-2 text-center">
 
-<div class="col-6 col-md-2 text-center habilidad-icono">
-
-<a href="https://www.mysql.com/" target="_blank">
+<a href="https://www.mysql.com" target="_blank">
 
 <i class="devicon-mysql-plain colored fs-1"></i>
 
@@ -257,18 +242,19 @@ Ver proyectos
 
 SQL
 
-<a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">
-Ver proyectos
-</a>
+<br>
+
+<a href="#proyecto-sql" class="btn btn-sm btn-outline-success mt-2">Ver proyectos</a>
 
 </div>
-</div>
-
 
 </div>
+
 </div>
+
+</div>
+
 </section>
-
 
 
 <!-- PROYECTOS -->
@@ -278,7 +264,9 @@ Ver proyectos
 <div class="container">
 
 <h2 class="fw-bold text-center mb-4">
+
 Proyectos académicos y personales
+
 </h2>
 
 <div class="accordion" id="accordionProyectos">
@@ -310,7 +298,7 @@ Sitio web semántico HTML5
 
 <br>
 
-<a href="https://github.com/isaaczarza/Sitio-web-html5" target="_blank" class="btn btn-success btn-sm mt-2">
+<a href="https://github.com/isaaczarza/Sitio-web-html5" target="_blank" class="btn btn-sm btn-success mt-2">
 
 Ver proyecto
 
@@ -321,12 +309,56 @@ Ver proyecto
 </ul>
 
 </div>
+
 </div>
+
 </div>
 
 
+<!-- CSS -->
 
-<!-- JS -->
+<div class="accordion-item" id="proyecto-css">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#css">
+
+CSS
+
+</button>
+
+</h2>
+
+<div id="css" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<ul class="list-group">
+
+<li class="list-group-item">
+
+Diseño responsive con CSS
+
+<br>
+
+<a href="#" class="btn btn-sm btn-success mt-2">
+
+Ver proyecto
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
 
 <div class="accordion-item" id="proyecto-js">
 
@@ -352,7 +384,7 @@ Aplicación interactiva con DOM
 
 <br>
 
-<a href="https://github.com/isaaczarza/juegos-frontend" target="_blank" class="btn btn-success btn-sm mt-2">
+<a href="https://github.com/isaaczarza/juegos-frontend" target="_blank" class="btn btn-sm btn-success mt-2">
 
 Ver proyecto
 
@@ -363,9 +395,10 @@ Ver proyecto
 </ul>
 
 </div>
-</div>
+
 </div>
 
+</div>
 
 
 <!-- PYTHON -->
@@ -390,11 +423,11 @@ Python
 
 <li class="list-group-item">
 
-Juego Par o Impar (Backend)
+Juego Par o Impar Backend
 
 <br>
 
-<a href="https://github.com/isaaczarza/juegos-backend-par-impar" target="_blank" class="btn btn-success btn-sm mt-2">
+<a href="https://github.com/isaaczarza/juegos-backend-par-impar" target="_blank" class="btn btn-sm btn-success mt-2">
 
 Ver proyecto
 
@@ -405,14 +438,60 @@ Ver proyecto
 </ul>
 
 </div>
+
 </div>
+
+</div>
+
+
+<!-- SQL -->
+
+<div class="accordion-item" id="proyecto-sql">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#sql">
+
+SQL
+
+</button>
+
+</h2>
+
+<div id="sql" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<ul class="list-group">
+
+<li class="list-group-item">
+
+Base de datos MySQL básica
+
+<br>
+
+<a href="#" class="btn btn-sm btn-success mt-2">
+
+Ver proyecto
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
 </div>
 
 
 </div>
+
 </div>
+
 </section>
-
 
 
 <!-- CONTACTO -->
@@ -421,11 +500,7 @@ Ver proyecto
 
 <div class="container">
 
-<h2 class="fw-bold text-center mb-4">
-
-Contacto
-
-</h2>
+<h2 class="fw-bold text-center mb-4">Contacto</h2>
 
 <form class="mx-auto" style="max-width:600px;">
 
@@ -435,11 +510,7 @@ Contacto
 
 <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
 
-<button class="btn btn-primary w-100">
-
-Enviar
-
-</button>
+<button class="btn btn-primary w-100">Enviar</button>
 
 </form>
 
@@ -455,7 +526,12 @@ Enviar
 </footer>
 
 
-<!-- FRASE API SCRIPT -->
+<!-- BOOTSTRAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- API FRASES -->
 
 <script>
 
@@ -465,25 +541,28 @@ fetch("https://api.quotable.io/random")
 
 .then(data => {
 
-document.getElementById("frase").textContent = `"${data.content}"`;
+document.getElementById("frase").textContent = '"' + data.content + '"';
 
 document.getElementById("autor").textContent = data.author;
-
-})
-
-.catch(() => {
-
-document.getElementById("frase").textContent = "La disciplina supera al talento.";
-
-document.getElementById("autor").textContent = "Autor desconocido";
 
 });
 
 </script>
 
 
+<!-- SOLUCIÓN DEFINITIVA SCROLL -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+window.onload = function(){
+
+window.scrollTo(0,0);
+
+}
+
+</script>
+
 
 </body>
+
 </html>
