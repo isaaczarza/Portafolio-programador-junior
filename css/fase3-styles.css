@@ -10,85 +10,166 @@
 }
 
 /* ------------------------------ */
+/* RESET SUAVE */
+/* ------------------------------ */
+*{
+  box-sizing: border-box;
+}
+
+/* ------------------------------ */
 /* ESTILOS GENERALES */
 /* ------------------------------ */
-html {
+html{
   scroll-behavior: smooth;
 }
 
-body {
+body{
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--gris-fondo);
   color: var(--gris-texto);
   padding-top: 70px;
+  margin: 0;
 }
 
 /* ------------------------------ */
 /* NAVBAR */
 /* ------------------------------ */
-.navbar {
+.navbar{
   background-color: var(--verde-oscuro);
 }
 
+.navbar-brand{
+  font-weight: 700;
+}
+
 .navbar-brand,
-.nav-link {
+.nav-link{
   color: var(--blanco) !important;
 }
 
-.nav-link {
+.nav-link{
   font-weight: 500;
+  transition: color .3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   color: var(--verde-claro) !important;
 }
 
 /* ------------------------------ */
-/* HERO */
+/* HERO / INICIO */
 /* ------------------------------ */
-#inicio {
+#inicio{
   min-height: 60vh;
   background-color: var(--verde-oscuro);
   color: var(--blanco);
+  display: flex;
+  align-items: center;
 }
 
-#inicio p {
+#inicio h1{
+  font-size: 2.5rem;
+}
+
+#inicio p{
   color: var(--verde-claro);
+  max-width: 650px;
+  margin: auto;
+}
+
+/* ------------------------------ */
+/* FRASE */
+/* ------------------------------ */
+#frase{
+  font-style: italic;
 }
 
 /* ------------------------------ */
 /* HABILIDADES */
 /* ------------------------------ */
-#habilidades h2 {
+#habilidades{
+  background-color: #f8f9fa;
+}
+
+#habilidades h2{
   color: var(--verde-oscuro);
+}
+
+#habilidades i{
+  font-size: 3rem;
+}
+
+/* ------------------------------ */
+/* TARJETAS DE HABILIDADES */
+/* ------------------------------ */
+#habilidades .bg-white{
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#habilidades .bg-white:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* ------------------------------ */
 /* PROYECTOS */
 /* ------------------------------ */
-.accordion-button {
+#proyectos h2{
+  color: var(--verde-oscuro);
+}
+
+.accordion-button{
   font-weight: 600;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
+}
+
+/* ------------------------------ */
+/* BOTONES */
+/* ------------------------------ */
+.btn-success{
+  background-color: var(--verde-oscuro);
+  border: none;
+}
+
+.btn-success:hover{
+  background-color: var(--verde-claro);
+  color: var(--verde-oscuro);
 }
 
 /* ------------------------------ */
 /* CONTACTO */
 /* ------------------------------ */
-#contacto h2 {
+#contacto{
+  background-color: #f8f9fa;
+}
+
+#contacto h2{
   color: var(--verde-oscuro);
 }
 
-form .form-control {
+form .form-control{
   border-radius: 10px;
   border: 2px solid var(--verde-claro);
 }
 
-form button {
+form .form-control:focus{
+  box-shadow: none;
+  border-color: var(--verde-oscuro);
+}
+
+form button{
   background-color: var(--verde-oscuro);
   color: var(--blanco);
   border-radius: 10px;
+  border: none;
+  transition: background .3s ease;
 }
 
-form button:hover {
+form button:hover{
   background-color: var(--verde-claro);
   color: var(--verde-oscuro);
 }
@@ -96,7 +177,7 @@ form button:hover {
 /* ------------------------------ */
 /* FOOTER */
 /* ------------------------------ */
-footer {
+footer{
   background-color: var(--verde-oscuro);
   color: var(--blanco);
   text-align: center;
@@ -107,11 +188,26 @@ footer {
 /* ------------------------------ */
 /* AOS FIX */
 /* ------------------------------ */
-[data-aos] {
+[data-aos]{
   opacity: 0;
   transition-property: transform, opacity;
 }
 
-[data-aos].aos-animate {
+[data-aos].aos-animate{
   opacity: 1;
+}
+
+/* ------------------------------ */
+/* RESPONSIVE */
+/* ------------------------------ */
+@media (max-width:768px){
+
+  #inicio h1{
+    font-size: 2rem;
+  }
+
+  #inicio p{
+    font-size: 1rem;
+  }
+
 }
